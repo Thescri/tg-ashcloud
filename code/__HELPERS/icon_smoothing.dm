@@ -117,6 +117,7 @@
 		return
 	if(QDELETED(A))
 		return
+
 	if(A.smooth & (SMOOTH_TRUE | SMOOTH_MORE))
 		var/adjacencies = calculate_adjacencies(A)
 

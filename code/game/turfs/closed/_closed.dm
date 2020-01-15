@@ -53,17 +53,22 @@
 	icon_state = "corner"
 
 /turf/closed/indestructible/splashscreen
-	name = "Space Station 13"
-	icon = 'icons/blank_title.png'
+	name = "Wasteland"
+	desc = "The wasteland is calling you..."
+	icon = 'fallout/icons/splashscreen.dmi'
 	icon_state = ""
 	layer = FLY_LAYER
 	bullet_bounce_sound = null
 
 /turf/closed/indestructible/splashscreen/New()
+	/*
 	SStitle.splash_turf = src
 	if(SStitle.icon)
 		icon = SStitle.icon
+	*/
+
 	..()
+	icon_state = "title[rand(1,13)]"
 
 /turf/closed/indestructible/splashscreen/vv_edit_var(var_name, var_value)
 	. = ..()
